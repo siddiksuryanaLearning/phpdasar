@@ -1,4 +1,4 @@
-Update Tgl  : 07-03-2023
+Update Tgl  : Rabu, 08-03-2023
 
 PLAYLIST :
 - [x] 1. Sintaks PHP
@@ -6,9 +6,9 @@ PLAYLIST :
 - [X] 3. Function
 - [X] 4. Array
 - [X] 5. Associative Array
-- [ ] 6. Get & POST
-- [ ] 7. DATABASE &  MySQL
-- [ ] 8. PHP & MySQL
+- [x] 6. Get & POST
+- [x] 7. DATABASE &  MySQL
+- [x] 8. PHP & MySQL
 - [ ] 9. INSERT & DELETE
 - [ ] 10. UPDATE
 - [ ] 11. SEARCHING
@@ -21,9 +21,9 @@ PLAYLIST :
 - [ ] 18. LIVE SEARCHING (AJAX)
 - [ ] 19. LIVE SEARCHING (JQUERY)
 
-Progress : Functio, Array, Assosiative Array
+Progress : Methode GET & POST, DATABASE MYSQL, PHP MYSQL 
 
-Plan     : Methode GET & POST, DATABASE MYSQL 
+Plan     : INSERT, DELETE, UPDATE, SEARCHING
 
-Problem  : gagal push
+Problem  : 
 
