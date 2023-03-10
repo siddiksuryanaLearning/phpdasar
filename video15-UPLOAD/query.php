@@ -1,4 +1,8 @@
 <?php
+    error_reporting(E_ALL);
+
+    ini_set("display_errors", 1);
+    
     $db = mysqli_connect('localhost', 'root','','db_fattah');
     
     function query($query){
@@ -71,9 +75,11 @@
             return false;
         }
 
-        move_uploaded_file($tmpName,"$root/$nameFile");
+        $newFile = uniqid().".".$pictureExtension;
+    
+        move_uploaded_file($tmpName,"$root/$newFile");
 
-        return $nameFile;
+        return $newFile;
     }
 
     function delete($no){
@@ -85,11 +91,18 @@
     function edit($data){
         global $db;
     $no = $data["no"];    
-    $picture = htmlspecialchars($data["picture"]);
     $mark = htmlspecialchars($data["mark"]);
     $price = htmlspecialchars($data["price"]);
     $madein = htmlspecialchars($data["madein"]);
     $years = htmlspecialchars($data["years"]);
+    $oldPicture = htmlspecialchars($data["oldPicture"]);
+    
+    if($_FILES['picture']['error'] === 4){
+        $picture = $oldPicture;
+    }else{
+        $picture = upload();
+    }
+    
     $query = "UPDATE product SET picture = '$picture', mark = '$mark', price = '$price', madein = '$madein', years = '$years' WHERE no = $no";
 
     mysqli_query($db, $query);

@@ -4,12 +4,13 @@
 if (isset($_POST["submit"])){
     if(edit($_POST) > 0 ){
         echo "
-            <script>
-            alert('Product suscess update');
-            document.location.href = 'index.php';
-            </script>
+            // <script>
+            // alert('Product suscess update');
+            // document.location.href = 'index.php';
+            // </script>
         
         ";
+        die;
     }else{
         echo "
         <script>
@@ -23,7 +24,6 @@ if (isset($_POST["submit"])){
 $no = $_GET["no"];
 
 $data = query("SELECT * FROM product WHERE no = $no")[0];
-var_dump($data)
 
 ?>
 
@@ -37,12 +37,14 @@ var_dump($data)
 </head>
 <body>
     <h1>Edit Product</h1>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="no" value="<?= $data["no"]; ?>" >
+        <input type="hidden" name="oldPicture" value="<?=$data["picture"];?>">
         <ul>
             <li>
+                <img src="img/<?=$data["picture"]?>" width="50"><br>
                 <label for="picture">Picture</label>
-                <input type="text" name="picture" id="picture" value="<?=$data["picture"]?>" required> <br>
+                <input type="file" name="picture" id="picture"> <br>
             </li>
             <br>
             <li>
