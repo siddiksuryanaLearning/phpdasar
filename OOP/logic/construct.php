@@ -1,5 +1,5 @@
 <?php
-// Definition
+// **Definition**
 // Meingisiasi objek setalah objek dibuat
 
 // Syantax
