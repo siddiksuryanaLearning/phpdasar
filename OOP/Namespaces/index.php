@@ -14,17 +14,16 @@
         }
     }
     
-    $guru = new Guru("Guru");
-    $dokter = new Dokter("Dokter");
-    $pilot = new Pilot("Pilot");
-    $data = array($guru, $dokter, $pilot);
-    var_dump($data);
-    foreach($data as $print){
-            echo "{$print->printWork()}<br>";
+    // $guru = new Guru("Guru");
+    // $dokter = new Dokter("Dokter");
+    // $pilot = new Pilot("Pilot");
+    // $data = array($guru, $dokter, $pilot);
+    // foreach($data as $print){
+    //         echo "{$print->printWork()}<br>";
 
-    }
-
-  
+    // }
     
+    
+    new Namespaces\pekerjaan\Guru();
 
 ?>

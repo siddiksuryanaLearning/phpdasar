@@ -2,6 +2,11 @@
     error_reporting(E_ALL);
 
     ini_set("display_errors", 1);
+     abstract class ParentClass1 {
+        
+        abstract protected function prefixName($name);
+        abstract protected function lastName($name);
+    }
 
     abstract class ParentClass {
         
@@ -36,6 +41,6 @@
     echo $class->lastName("Yump Pie");
     echo "<br>";
     echo $class->prefixName("Jane Doe");
-    echo $class->lastName("Jie poe");
+    // echo $class->lastName("Jie poe");
 
 ?>
