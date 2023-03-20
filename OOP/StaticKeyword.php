@@ -7,7 +7,7 @@
 
         public static $number = 1;
 
-        public static function printString(){
+        public function printString(){
             return "Number : " . self::$number++;
         }
         
