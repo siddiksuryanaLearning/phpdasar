@@ -1,23 +1,24 @@
-**Definition**
-Meingisiasi objek setalah objek dibuat
+<?php
+// Definition
+// Meingisiasi objek setalah objek dibuat
 
-**Syantax**
+// Syantax
   
   function __construct($name, $color) {
     $this->name = $name;
     $this->color = $color;
   }
 
-**Logic**
+// **Logic**
 
-1.variable penampung akan dimasukan kedalam parameter pada fungsi constructor
-2.pemanggilan global variable yang akan menampung parameter constructor
-3.membuat variable objek untuk menginisiasi class
-4.memanggil fungsi dalam kelas
+// 1.variable penampung akan dimasukan kedalam parameter pada fungsi constructor
+// 2.pemanggilan global variable yang akan menampung parameter constructor
+// 3.membuat variable objek untuk menginisiasi class
+// 4.memanggil fungsi dalam kelas
 
-example :
+// example :
 
-<?php
+
 class Fruit {
   public $name;
   public $color;
@@ -38,5 +39,6 @@ $apple = new Fruit("Apple", "red");
 echo $apple->get_name();
 echo "<br>";
 echo $apple->get_color();
-?>
 
+
+?>
