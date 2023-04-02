@@ -24,7 +24,7 @@ class Product extends Controller
     {
         if ($this->model('Product_model')->addProduct($_POST) > 0) {
             Flasher::setFlash('Success !', '', 'blue');
-            header('Location: http://localhost/phpmvc/public/product/add');
+            header('Location: http://localhost/phpdasar/phpdasar/phpmvc/public/product/add/');
             exit;
         } else {
             // Flasher::setFlash('Failed !', '', 'red');

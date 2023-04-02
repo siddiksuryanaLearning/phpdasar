@@ -1,7 +1,7 @@
  <div class="w-5/6 bg-white-400 p-4 rounded-lg">
      <div class="flex flex-col justify-center items-center">
          <?php Flasher::flash(); ?>
-         <p class="text-4xl mt-6">Tambah Pasien</p>
+         <p class="text-4xl mt-6">Tambah </p>
          <div class="w-full max-w-md mx-auto">
              <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                  <div class="mb-4">

@@ -10,7 +10,7 @@
                 <li class="px-4 py-2 border-b border-gray-200">RAM : <?= $data['pro']['ram']; ?></li><br>
             </ul>
             <?php $no++ ?>
-            <a href="http://localhost/phpmvc/public/product/">Kembali</a>
+            <a href="<?= BASEURL; ?>">Kembali</a>
         </div>
     </div>
 

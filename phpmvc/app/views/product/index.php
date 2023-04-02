@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-6">
                     <h1 class="font-bold text-3xl">Daftar Produk</h1>
-                    <a href="/add">Tambah</a>
+                    <a href="<?= BASEURL; ?>product/add">Tambah</a>
                     <form method="post" action="http://localhost/phpmvc/public/product/search">
                         <div class="relative text-gray-600">
                             <input type="search" name="search" placeholder="Search" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none" name="keyword" id="keyword">
