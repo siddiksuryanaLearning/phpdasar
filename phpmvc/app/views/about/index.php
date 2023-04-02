@@ -1,0 +1,1 @@
+<p><span class="font-bold">Halo</span> Nama Saya <?= $data['nama'] ?>, Umur saya <?= $data['umur'] ?> tahun, saya adalah seorang <?= $data['pekerjaan'] ?></p>
