@@ -1,7 +1,7 @@
 <?php
 
 //encapsulation
-class Rumah
+class ERumah
 {
     public $alamat;
     private $sertifikat;
@@ -39,8 +39,3 @@ class Rumah
         $this->pajak = $pajak;
     }
 }
-
-$Home = new Rumah();
-$Home->SetAlamat("Bandung");
-
-echo $Home->GetAlamat();

@@ -1,6 +1,6 @@
 <?php
 
-abstract class Rumah
+abstract class ARumah
 {
     public $payment, $lokasi;
 
@@ -23,38 +23,3 @@ abstract class Rumah
         return $this->lokasi;
     }
 }
-
-class Summarecon extends Rumah
-{
-    public function setPayment($payment): string
-    {
-        return $this->payment = $payment;
-    }
-
-    public function setLokasi($lokasi): string
-    {
-        return $this->lokasi = $lokasi;
-    }
-}
-
-class GBI extends Rumah
-{
-    public function setPayment($payment): string
-    {
-        return $this->payment = $payment;
-    }
-
-    public function setLokasi($lokasi): string
-    {
-        return $this->lokasi = $lokasi;
-    }
-}
-
-$GBI = new GBI();
-$Summarecon = new Summarecon();
-
-$GBI->setPayment("KPR");
-$Summarecon->setPayment("Cash");
-echo "Payment : " . $GBI->getPayment();
-echo "<br>";
-echo "Payment : " . $Summarecon->getPayment();

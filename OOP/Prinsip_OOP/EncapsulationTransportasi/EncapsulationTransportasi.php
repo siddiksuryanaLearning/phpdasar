@@ -1,6 +1,6 @@
 <?php
 
-class Transportasi
+class ETransportasi
 {
     public $jenis;
     protected $sarana;
@@ -33,11 +33,3 @@ class Transportasi
         $this->sarana = $sarana;
     }
 }
-
-$sepeda = new Transportasi();
-$sepeda->setJenis("Darat");
-$sepeda->setSarana("Aspal");
-
-echo "Jenis Kendaraan : " . $sepeda->getJenis();
-echo "<br>";
-echo "Type Kendaraan : " . $sepeda->getSarana();

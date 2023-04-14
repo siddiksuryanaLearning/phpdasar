@@ -27,35 +27,3 @@ abstract class Buku
         return $this->terbitan;
     }
 }
-
-class Pendidikan extends Buku
-{
-    public function setJudul($judul): string
-    {
-        return $this->judul = $judul;
-    }
-    public function setTerbitan($terbitan): string
-    {
-        return $this->terbitan = $terbitan;
-    }
-}
-class Sport extends Buku
-{
-    public function setJudul($judul): string
-    {
-        return $this->judul = $judul;
-    }
-    public function setTerbitan($terbitan): string
-    {
-        return $this->terbitan = $terbitan;
-    }
-}
-
-$pendidikan = new Pendidikan("PKN", "Madani");
-$sport = new Sport("Otomotif", "AutoOtto");
-
-echo $pendidikan->getJudul();
-echo $pendidikan->getTerbitan();
-echo "<br>";
-echo $sport->getJudul();
-echo $sport->getTerbitan();

@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-class Buku
+class EBuku
 {
     public $penulis, $tahun;
     private $stock;
@@ -48,8 +48,3 @@ class Buku
         $this->stock = $stock;
     }
 }
-
-$buku = new Buku("J.K.Rowling", "2018", "1000 pcs");
-echo $buku->getPenulis();
-echo $buku->getTahun();
-echo $buku->getStock();
