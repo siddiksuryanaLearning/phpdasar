@@ -1,0 +1,10 @@
+<?php
+require_once('Buku/buku.php');
+require_once('Buku/kategori.php');
+require_once('Buku/penulis.php');
+require_once('Rumah/payment.php');
+require_once('Rumah/rumah.php');
+require_once('Rumah/summarecon.php');
+require_once('Transportasi/transportasi.php');
+require_once('Transportasi/jenis.php');
+require_once('Transportasi/merk.php');
